@@ -1,0 +1,188 @@
+body {
+  background-color: #252525; }
+
+h1 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  line-height: 61px;
+  text-transform: uppercase;
+  margin: 0; }
+
+h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+  line-height: 46px; }
+
+h3 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  line-height: 31px; }
+
+h4 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  text-transform: uppercase; }
+
+p {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px; }
+
+.price {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 1px;
+  margin-left: 20px; }
+
+.section-header-image {
+  height: 530px;
+  width: 75%;
+  background-size: cover;
+  margin-bottom: 110px; }
+  .section-header-image h1 {
+    position: absolute;
+    background-color: #252525;
+    padding: 24px 32px; }
+
+.section-content {
+  margin-bottom: 100px; }
+  .section-content .menu-item {
+    margin-bottom: 60px; }
+
+.navbar {
+  width: 100%;
+  height: 115px;
+  background-color: #252525;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0; }
+  .navbar .navbar-brand {
+    margin-left: 30px; }
+    .navbar .navbar-brand img {
+      width: 45px;
+      height: 45px; }
+  .navbar .navbar-links a {
+    color: #F8F8F8 !important;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .navbar .navbar-icons {
+    margin-right: 30px; }
+    .navbar .navbar-icons a img {
+      width: 30px;
+      height: 30px; }
+
+header {
+  height: 785px; }
+  header .header-image {
+    height: 100%;
+    background-image: url("../images/header-image.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3); }
+  header .header-text {
+    width: 560px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+    header .header-text .curved-text {
+      font-size: 25px; }
+    header .header-text .brickhouse {
+      font-size: 60px; }
+    header .header-text .timber {
+      font-size: 25px; }
+
+.our-menu .our-menu-header-text {
+  height: 230px;
+  margin-left: 170px;
+  padding-right: 15px;
+  padding-left: 15px; }
+.our-menu .pizza-addons h4,
+.our-menu .entrees-sides h4 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 7px;
+  line-height: 31px;
+  margin-bottom: 30px; }
+.our-menu .pizza-addons h3,
+.our-menu .entrees-sides h3 {
+  font-weight: 300;
+  font-size: 18px; }
+.our-menu .starters .section-header-image {
+  background-image: url("../images/header-image-starters.jpg"); }
+  .our-menu .starters .section-header-image h1 {
+    right: 10%; }
+.our-menu .pizza .section-header-image {
+  background-image: url("../images/header-image-pizza.jpg");
+  margin-left: auto;
+  margin-right: -15px; }
+  .our-menu .pizza .section-header-image h1 {
+    left: 10%; }
+.our-menu .pizza .pizza-addons .pizza-take-home {
+  height: 444px;
+  width: 445px;
+  background-color: #383838;
+  text-align: center;
+  position: absolute; }
+  .our-menu .pizza .pizza-addons .pizza-take-home div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    .our-menu .pizza .pizza-addons .pizza-take-home div img {
+      margin-bottom: 40px; }
+    .our-menu .pizza .pizza-addons .pizza-take-home div h3 {
+      font-weight: bold; }
+.our-menu .entrees .section-header-image {
+  background-image: url("../images/header-image-entrees.jpg");
+  margin-right: auto;
+  margin-left: -15px; }
+  .our-menu .entrees .section-header-image h1 {
+    right: 10%; }
+.our-menu .beverages .section-header-image {
+  background-image: url("../images/header-image-beverages.jpg");
+  margin-left: auto;
+  margin-right: -15px; }
+  .our-menu .beverages .section-header-image h1 {
+    left: 10%; }
+
+.our-story .our-story-text {
+  padding: 30px; }
+  .our-story .our-story-text h2 {
+    margin-bottom: 50px; }
+.our-story .our-story-image {
+  margin-right: -15px;
+  margin-left: -15px; }
+.our-story .map-marker {
+  width: 100%;
+  height: 545px;
+  text-align: center; }
+  .our-story .map-marker img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    width: 95px;
+    height: auto; }
+
+/*# sourceMappingURL=styles.css.map */
