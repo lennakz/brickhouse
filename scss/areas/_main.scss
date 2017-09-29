@@ -128,6 +128,11 @@ header {
 		h2 {
 			margin-bottom: 50px;
 		}
+		p {
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 45px;
+		}
 	}
 	.our-story-image {
 		margin-right: -15px;
@@ -139,6 +144,16 @@ header {
 		height: 545px;
 		text-align: center;
 		
+		& > div {
+			text-align: center;
+			height: 100%;
+			background-color: #252525;
+			
+			& > div {
+				width: 100%;
+			}
+		}
+				
 		img {
 			-webkit-filter: invert(100%);
 			filter: invert(100%);
@@ -148,14 +163,40 @@ header {
 	}
 	
 	.location-pictures {
+		margin-left: -15px;
+		margin-right: -15px;
 		
+		img {
+			padding-left: 0;
+			padding-right: 0;
+			height: 414px;
+			width: 100%;
+		}
+		
+		& > div > div {
+			padding: 0;
+		}
+		
+		& > div > img {
+			height: 545px;
+		}
 	}
-	
 }
 
-
-
-
+.hours-location {
+	margin-top: 100px;
+	
+	.start-note {
+		margin-top: 50px;
+		
+		p {
+			color: #AAAAAA;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 20px;
+		}
+	}
+}
 
 
 
