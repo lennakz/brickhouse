@@ -1,6 +1,7 @@
 .navbar {
 	width: 100%;
-	height: $header-height;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background-color: #252525;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
 	border: none;
@@ -14,7 +15,15 @@
 			height: 45px;
 		}
 	}
+	.navbar-toggler {
+		border-color: #fff;
+		
+		span {
+			filter: invert(100%);
+		}
+	}
 	.navbar-links {
+		text-align: center;
 		a {
 			color: #F8F8F8 !important;
 			font-family: $font;
@@ -25,13 +34,62 @@
 		}
 	}
 	.navbar-icons {
+		text-align: center;
 		margin-right: 30px;
-			a {
-				img {
-					width: 30px;
-					height: 30px;
-				}
-			}
 		
+		a {
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.navbar {
+		position: relative;
+				
+		.navbar-links {
+			position: absolute;
+			transform: translateX(-50%);
+			left: 50%;
+		}
+		.navbar-icons {
+			position: absolute;
+			right: 0;
+		}
+	}
+}
+
+header {
+	height: 785px;
+		
+	.header-image {
+		height: 100%;
+		background-image: url("../images/header-image.jpg");
+		background-size: cover;
+		background-blend-mode: overlay;
+		background-color: rgba(0,0,0,0.3);
+	}
+	
+	.header-text {
+		width: 560px;
+		text-align: center;
+		
+		img {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header {
+		height: 400px;
+		.header-text {
+			img {
+				width: 90%;
+			}
+		}
 	}
 }

@@ -68,9 +68,20 @@ p {
   .section-content .menu-item {
     margin-bottom: 60px; }
 
+@media screen and (max-width: 767px) {
+  .section-header-image {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 50px; }
+    .section-header-image h1 {
+      position: static;
+      background-color: #1C1B19;
+      padding: 0; } }
 .navbar {
   width: 100%;
-  height: 115px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #252525;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
   border: none;
@@ -80,19 +91,36 @@ p {
     .navbar .navbar-brand img {
       width: 45px;
       height: 45px; }
-  .navbar .navbar-links a {
-    color: #F8F8F8 !important;
-    font-family: "Open Sans";
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
+  .navbar .navbar-toggler {
+    border-color: #fff; }
+    .navbar .navbar-toggler span {
+      filter: invert(100%); }
+  .navbar .navbar-links {
+    text-align: center; }
+    .navbar .navbar-links a {
+      color: #F8F8F8 !important;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
   .navbar .navbar-icons {
+    text-align: center;
     margin-right: 30px; }
     .navbar .navbar-icons a img {
       width: 30px;
       height: 30px; }
 
+@media screen and (min-width: 992px) {
+  .navbar {
+    position: relative; }
+    .navbar .navbar-links {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%; }
+    .navbar .navbar-icons {
+      position: absolute;
+      right: 0; } }
 header {
   height: 785px; }
   header .header-image {
@@ -103,19 +131,18 @@ header {
     background-color: rgba(0, 0, 0, 0.3); }
   header .header-text {
     width: 560px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff; }
-    header .header-text .curved-text {
-      font-size: 25px; }
-    header .header-text .brickhouse {
-      font-size: 60px; }
-    header .header-text .timber {
-      font-size: 25px; }
+    text-align: center; }
+    header .header-text img {
+      width: 50%; }
 
+@media screen and (max-width: 767px) {
+  header {
+    height: 400px; }
+    header .header-text img {
+      width: 90%; } }
 .our-menu .our-menu-header-text {
   height: 230px;
-  margin-left: 170px;
+  margin-left: 10%;
   padding-right: 15px;
   padding-left: 15px; }
 .our-menu .pizza-addons h4,
@@ -142,19 +169,13 @@ header {
   .our-menu .pizza .section-header-image h1 {
     left: 10%; }
 .our-menu .pizza .pizza-addons .pizza-take-home {
-  /*				height: 444px;
-  				width: 445px;*/
   background-color: #383838;
   text-align: center;
-  position: absolute; }
-  .our-menu .pizza .pizza-addons .pizza-take-home div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
-    .our-menu .pizza .pizza-addons .pizza-take-home div img {
-      margin-bottom: 40px; }
-    .our-menu .pizza .pizza-addons .pizza-take-home div h3 {
-      font-weight: bold; }
+  padding: 30px 20px; }
+  .our-menu .pizza .pizza-addons .pizza-take-home div img {
+    margin-bottom: 40px; }
+  .our-menu .pizza .pizza-addons .pizza-take-home div h3 {
+    font-weight: bold; }
 .our-menu .entrees .section-header-image {
   background-image: url("../images/header-image-entrees.jpg");
   margin-right: auto;
@@ -179,21 +200,10 @@ header {
 .our-story .our-story-image {
   margin-right: -15px;
   margin-left: -15px; }
-.our-story .map-marker {
+.our-story .map iframe {
   width: 100%;
   height: 545px;
   text-align: center; }
-  .our-story .map-marker > div {
-    text-align: center;
-    height: 100%;
-    background-color: #252525; }
-    .our-story .map-marker > div > div {
-      width: 100%; }
-  .our-story .map-marker img {
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    width: 95px;
-    height: auto; }
 .our-story .location-pictures {
   /*		margin-left: -15px;
   		margin-right: -15px;*/ }
@@ -227,5 +237,27 @@ footer {
     letter-spacing: 4px;
     line-height: 26px;
     border-bottom: 4px solid #979797; }
+
+@media screen and (max-width: 767px) {
+  .our-menu .our-menu-header-text {
+    margin: auto;
+    text-align: center; }
+    .our-menu .our-menu-header-text h2 {
+      width: 100%; } }
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px; }
+  #scroll-to-top:hover {
+    background-color: #555; }
 
 /*# sourceMappingURL=styles.css.map */
