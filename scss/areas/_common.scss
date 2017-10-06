@@ -80,3 +80,18 @@ p {
 		margin-bottom: 60px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.section-header-image {
+		height: 350px;
+		width: 100%;
+		background-size: cover;
+		margin-bottom: 50px;
+
+		h1 {
+			position: static;
+			background-color: #1C1B19;
+			padding: 0;
+		}
+	}
+}
