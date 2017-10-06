@@ -1,0 +1,40 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3460955, 2017-10-05T21:52:24-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AndesRoundedBook by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/andes-rounded/book/
+ * 
+ * Webfont: AndesRoundedExtraBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/andes-rounded/extra-bold/
+ * 
+ * Webfont: AndesRoundedSemiBold by Latinotype
+ * URL: https://www.myfonts.com/fonts/latinotype/andes-rounded/semi-bold/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3460955
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2014 by Daniel Hern&#x00C3;&#x00A1;ndez. All rights reserved.
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/34cf5b");
+
+  
+@font-face {font-family: 'AndesRoundedBook';src: url('../fonts/34CF5B_0_0.eot');src: url('../fonts/34CF5B_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/34CF5B_0_0.woff2') format('woff2'),url('../fonts/34CF5B_0_0.woff') format('woff'),url('../fonts/34CF5B_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AndesRoundedExtraBold';src: url('../fonts/34CF5B_1_0.eot');src: url('../fonts/34CF5B_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/34CF5B_1_0.woff2') format('woff2'),url('../fonts/34CF5B_1_0.woff') format('woff'),url('../fonts/34CF5B_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AndesRoundedSemiBold';src: url('../fonts/34CF5B_2_0.eot');src: url('../fonts/34CF5B_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/34CF5B_2_0.woff2') format('woff2'),url('../fonts/34CF5B_2_0.woff') format('woff'),url('../fonts/34CF5B_2_0.ttf') format('truetype');}
+ 
