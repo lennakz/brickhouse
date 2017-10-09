@@ -1,0 +1,61 @@
+/* ---------------------------------------------------
+    VARIABLES
+--------------------------------------------------- */
+
+/* -------------------- PROJECT STYLES -------------------- */
+
+// COLOR PALETTE
+$white: #fff;
+$white-gray: #F8F8F8;
+$gray: #979797;
+$black-gray: #252525;
+$black: #1C1B19;
+
+// PROJECT FONTS
+$andes-rounded-book: AndesRoundedBook, "Helvetica Neue", Arial, sans-serif;
+$andes-rounded-semibold: AndesRoundedSemiBold, "Helvetica Neue", Arial, sans-serif;
+$andes-rounded-extrabold: AndesRoundedExtraBold, "Helvetica Neue", Arial, sans-serif;
+
+
+/* -------------------- SETTING VARIABLES -------------------- */
+
+// KEY COLORS
+$primary-color: $white;
+$secondary-color: $gray;
+
+// BACKGROUNDS & BOX SHADOW
+$header-bg-color: $black-gray;
+$body-bg-color: $black;
+$card-bg-color: $black-gray;
+$box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5);
+
+// FONT FAMILY
+$font-family-book: $andes-rounded-book;
+$font-family-semibold: $andes-rounded-semibold;
+$font-family-extrabold: $andes-rounded-extrabold;
+
+// FONT SIZES
+$font-size-base: 20px;
+$h1-font-size: 0;
+$h2-font-size: 1.8rem;
+$h3-font-size: 2.4rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1.2rem;
+$h6-font-size: 1rem;
+$small-font-size: .7rem;
+
+// SCREEN WIDTH
+$md-screen-width: 768px;
+$lg-screen-width: 1024px;
+$xl-screen-width: 1200px;
+
+// NAV HEIGHT
+$nav-height: 5.75rem;
+$nav-height-mobile: 4rem;
+
+// SPACING
+$spacing-xs: 1rem;
+$spacing-sm: 2rem;
+$spacing-md: 3rem;
+$spacing-lg: 4rem;
+$spacing-xl: 5rem;

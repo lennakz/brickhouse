@@ -1,0 +1,83 @@
+/* ---------------------------------------------------
+    NAVBAR
+--------------------------------------------------- */
+
+.navbar {
+	width: 100vw;
+	height: $nav-height-mobile;
+	padding: 1rem;
+	background-color: $header-bg-color;
+	box-shadow: $box-shadow;
+	@include xl-and-up {
+		height: $nav-height;
+	};
+	.navbar-brand {
+		margin-left: .5rem;
+		img {
+			width: 45px;
+			height: 45px;
+		}
+		@include xl-and-up {
+			margin-left: 0;
+		};
+	}
+	.navbar-toggler {
+		border-color: transparent;
+		span {
+			filter: invert(100%);
+		}
+	}
+	.navbar-collapse {
+		position: absolute;
+		top: $nav-height-mobile;
+		left: 0;
+		width: 100vw;
+		padding: 1rem;
+		border-top: 1px solid $gray;
+		background-color: $header-bg-color;
+		box-shadow: $box-shadow;
+		@include xl-and-up {
+			position: static;
+			margin-top: .25rem;
+			width: auto;
+      padding: 0;
+			border-top: none;
+			box-shadow: none;
+		};
+	}
+	.navbar-links {
+		text-align: center;
+		@include xl-and-up {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		};
+		.nav-link {
+			padding: 1rem;
+			color: $white-gray !important;
+			font-size: $small-font-size;
+      font-weight: bold;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			@include xl-and-up {
+				margin: 0;
+			};
+		}
+	}
+	.navbar-icons {
+		padding-top: 1rem;
+		@include xl-and-up {
+			padding-top: 0;
+			.nav-item + .nav-item {
+				margin-left: 1rem;
+			}
+		};
+		.nav-link {
+			padding: 1rem;
+			img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+	}
+}

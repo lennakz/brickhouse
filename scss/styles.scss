@@ -1,5 +1,12 @@
-@import "areas/_variables.scss";
-@import "areas/_common.scss";
-@import "areas/_header.scss";
-@import "areas/_main.scss";
-@import "areas/_footer.scss";
+/* ---------------------------------------------------
+    BRICKHOUSE STYLES
+--------------------------------------------------- */
+
+@import "settings/_variables.scss";
+@import "settings/_mixins.scss";
+@import "settings/_common.scss";
+
+@import "partials/_navbar.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
+@import "partials/_footer.scss";

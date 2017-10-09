@@ -1,0 +1,251 @@
+/* ---------------------------------------------------
+    MAIN
+--------------------------------------------------- */
+
+/* -------------------- SECTION HEADER & CONTENT -------------------- */
+
+.section-header-image {
+	height: 250px;
+	width: 100%;
+	background-size: cover;
+	margin-bottom: $spacing-xs;
+	h3 {
+		position: absolute;
+		background-color: $body-bg-color;
+		padding: ($spacing-xs + .5rem) $spacing-xs $spacing-xs;
+		line-height: 1.3;
+	}
+	@include md-and-up {
+		height: 400px;
+	};
+	@include lg-and-up {
+		width: 75%;
+		height: 530px;
+		margin-bottom: $spacing-sm;
+		h3 {
+			padding: ($spacing-sm + .5rem) $spacing-sm $spacing-sm;
+		}
+	}
+	@include xl-and-up {
+		margin-bottom: $spacing-xl;
+	};
+	&.align-left {
+		margin-left: -2rem;
+		margin-right: auto;
+
+		h3 {
+			right: 0;
+			@include lg-and-up {right: 15%;};
+		}
+	}
+	&.align-right {
+		margin-left: auto;
+		margin-right: -2rem;
+
+		h3 {
+			left: 0;
+			@include lg-and-up {left: 15%;};
+		}
+	}
+}
+
+.section-content {
+	+ .section-content {
+		margin-top: $spacing-sm;
+		@include lg-and-up {margin-top: $spacing-xl;};
+	}
+	.menu-item {
+		margin-top: $spacing-sm;
+		@include lg-and-up {margin-top: $spacing-md;};
+		.price {
+			margin-left: $spacing-xs / 2;
+			font-family: $font-family-book;
+			font-size: 1rem;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+
+/* -------------------- OUR MENU -------------------- */
+
+.our-menu {
+	.our-menu-header-text {
+		padding: $spacing-md 0;
+		@include lg-and-up {padding: $spacing-xl 0;};
+		h2 {
+			width: 100%;
+			text-align: center;
+			@include md-and-up {
+				margin-left: 10%;
+				text-align: left;
+			};
+		}
+	}
+	.our-menu-section {
+		+ .our-menu-section {
+			margin-top: $spacing-lg;
+			@include lg-and-up {
+				margin-top: $spacing-xl;
+			};
+		}
+	}
+	.pizza-addons,
+	.entrees-sides {
+		h5 {
+			font-family: $font-family-semibold;
+			font-size: $h6-font-size;
+		}
+	}
+	.starters {
+		.section-header-image {
+			background-image: url("../images/starters.jpg");
+		}
+	}
+	.pizza {
+		.section-header-image {
+			background-image: url("../images/pizza.jpg");
+		}
+		.pizza-take-home {
+			margin-top: $spacing-sm;
+			padding: $spacing-sm;
+			background-color: $card-bg-color;
+			text-align: center;
+			@include md-and-up {
+				margin-top: 0;
+			};
+			@include lg-and-up {
+				padding: $spacing-md;
+			};
+			img {
+				margin-bottom: $spacing-xs;
+				@include lg-and-up {margin-bottom: $spacing-sm;};
+			}
+			h5 {
+				font-family: $font-family-extrabold;
+			}
+		}
+	}
+	.entrees {
+		.section-header-image {
+			background-image: url("../images/entrees.jpg");
+		}
+	}
+	.beverages {
+		.section-header-image {
+			background-image: url("../images/beverages.jpg");
+		}
+		.beverages-main {
+			margin-top: $spacing-md;
+		}
+	}
+}
+
+
+/* -------------------- OUR STORY -------------------- */
+
+.our-story {
+	margin-top: $spacing-md;
+	@include lg-and-up {margin-top: $spacing-xl;};
+	.our-story-image {
+		height: 250px;
+		background: url("../images/our-story.jpg") no-repeat center/cover;
+		@include md-and-up {
+			margin-left: -2rem;
+			height: 650px;
+		};
+		@include xl-and-up {
+			height: 990px;
+		};
+	}
+	.our-story-text {
+		margin-top: $spacing-md;
+		@include md-and-up {
+			margin-top: 0;
+			padding: $spacing-xs;
+		};
+		@include xl-and-up {
+			padding: $spacing-sm;
+		};
+		h2 {
+			margin-bottom: $spacing-xs;
+			@include md-and-up {margin-bottom: $spacing-sm;};
+		}
+	}
+}
+
+
+/* -------------------- HOURS & LOCATION -------------------- */
+
+.hours-location {
+	.map {
+		margin-top: $spacing-lg;
+
+		iframe {
+			width: 100%;
+			height: 300px;
+			text-align: center;
+			@include md-and-up {height: 545px;};
+		}
+	}
+	.location-pictures {
+		margin: -.5rem;
+		margin-bottom: $spacing-md;
+		.location-picture {
+			height: 150px;
+			background: no-repeat center/cover;
+			&.long {
+				height: 200px;
+			}
+			&:nth-child(1) {background-image: url("../images/location-1.jpg");}
+			&:nth-child(2) {background-image: url("../images/location-2.jpg");}
+			&:nth-child(3) {background-image: url("../images/location-3.jpg");}
+			&:nth-child(4) {background-image: url("../images/location-4.jpg");}
+			&:nth-child(5) {background-image: url("../images/location-5.jpg");}
+			@include md-and-up {
+				height: 250px;
+				&.long {height: 350px;}
+			};
+			@include lg-and-up {
+				height: 415px;
+				&.long {height: 545px;}
+			};
+		}
+	}
+
+	.start-note {
+		margin: $spacing-xs 0 $spacing-sm;
+		@include md-and-up {
+			margin-top: $spacing-md 0 0;
+		};
+		p {
+			margin-top: $spacing-sm;
+			color: $gray;
+			@include md-and-up {
+				margin-top: $spacing-md;
+			};
+			+ p {
+				margin-top: $spacing-xs;
+			}
+		}
+	}
+}
+
+// #scroll-to-top {
+// 	display: none;
+// 	position: fixed;
+// 	bottom: 1rem;
+// 	right: 1rem;
+// 	z-index: 99;
+// 	border: none;
+// 	outline: none;
+// 	background-color: red;
+// 	color: white;
+// 	cursor: pointer;
+// 	padding: .8rem;
+// 	border-radius: 10px;
+//
+// 	&:hover {
+// 		background-color: #555;
+// 	}
+// }

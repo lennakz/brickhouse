@@ -1,0 +1,33 @@
+/* ---------------------------------------------------
+    HEADER
+--------------------------------------------------- */
+
+header {
+	height: 345px;
+	margin-top: $nav-height-mobile;
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	background-blend-mode: overlay;
+	background-color: rgba(0,0,0,0.3);
+	@include lg-and-up {
+		height: 485px;
+	};
+	@include xl-and-up {
+		margin-top: $nav-height;
+		height: 785px;
+	};
+	.container, .header-image {
+		height: 100%;
+	}
+	.header-text {
+		width: 560px;
+		margin-top: -1rem;
+		text-align: center;
+		@include md-and-up {margin-top: -1.5rem;}
+		@include lg-and-up {margin-top: -2.5rem;}
+		img {
+			width: 90%;
+			@include md-and-up {width: 50%;};
+		}
+	}
+}

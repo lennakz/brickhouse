@@ -1,0 +1,34 @@
+/* ---------------------------------------------------
+    FOOTER
+--------------------------------------------------- */
+
+footer {
+	padding: 2rem 0 6rem;
+	@include md-and-up {
+		padding: 5rem 0 6rem;
+	};
+	.footer-link {
+		a {
+      position: relative;
+			top: -.5rem;
+			color: $gray;
+			font-family: $font-family-semibold;
+			font-size: $small-font-size;
+			letter-spacing: 4px;
+      text-transform: uppercase;
+			@include md-and-up {
+				font-size: 1rem;
+			};
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -.75rem;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $gray;
+      }
+		}
+	}
+}
