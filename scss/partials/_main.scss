@@ -30,7 +30,6 @@
 		margin-bottom: $spacing-xl;
 	};
 	&.align-left {
-		margin-left: -2rem;
 		margin-right: auto;
 
 		h3 {
@@ -40,7 +39,6 @@
 	}
 	&.align-right {
 		margin-left: auto;
-		margin-right: -2rem;
 
 		h3 {
 			left: 0;
@@ -151,7 +149,6 @@
 		height: 250px;
 		background: url("../images/our-story.jpg") no-repeat center/cover;
 		@include md-and-up {
-			margin-left: -2rem;
 			height: 650px;
 		};
 		@include xl-and-up {
@@ -160,12 +157,12 @@
 	}
 	.our-story-text {
 		margin-top: $spacing-md;
+		padding: 0 ($spacing-xs - .25rem);
 		@include md-and-up {
 			margin-top: 0;
-			padding: $spacing-xs;
 		};
 		@include xl-and-up {
-			padding: $spacing-sm;
+			max-width: 700px;
 		};
 		h2 {
 			margin-bottom: $spacing-xs;
@@ -189,7 +186,7 @@
 		}
 	}
 	.location-pictures {
-		margin: -.5rem;
+		margin-top: -.5rem;
 		margin-bottom: $spacing-md;
 		.location-picture {
 			height: 150px;

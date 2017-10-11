@@ -17,10 +17,11 @@ html {
   font-size: 20px; }
 
 body {
+  background-color: #1C1B19;
   color: #fff;
   font-family: AndesRoundedBook, "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
-  background-color: #1C1B19; }
+  overflow-x: hidden; }
 
 h1, h2, h3, h4, h5 {
   padding-top: .5rem;
@@ -56,7 +57,8 @@ h5 {
   margin-bottom: 1rem;
   font-family: AndesRoundedExtraBold, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2rem;
-  letter-spacing: 7px; }
+  letter-spacing: 7px;
+  line-height: 1.5rem; }
 
 h6 {
   font-family: AndesRoundedBook, "Helvetica Neue", Arial, sans-serif;
@@ -78,10 +80,6 @@ a {
   .container {
     max-width: 1340px; } }
 
-@media screen and (min-width: 1200px) {
-  .container-small {
-    max-width: 1180px; } }
-
 /* ---------------------------------------------------
     NAVBAR
 --------------------------------------------------- */
@@ -93,7 +91,7 @@ a {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5); }
   @media screen and (min-width: 1200px) {
     .navbar {
-      height: 5.75rem; } }
+      height: 4.75rem; } }
   .navbar .navbar-brand {
     margin-left: .5rem; }
     .navbar .navbar-brand img {
@@ -168,7 +166,7 @@ header {
       height: 485px; } }
   @media screen and (min-width: 1200px) {
     header {
-      margin-top: 5.75rem;
+      margin-top: 4.75rem;
       height: 785px; } }
   header .container, header .header-image {
     height: 100%; }
@@ -216,7 +214,6 @@ header {
     .section-header-image {
       margin-bottom: 5rem; } }
   .section-header-image.align-left {
-    margin-left: -2rem;
     margin-right: auto; }
     .section-header-image.align-left h3 {
       right: 0; }
@@ -224,8 +221,7 @@ header {
         .section-header-image.align-left h3 {
           right: 15%; } }
   .section-header-image.align-right {
-    margin-left: auto;
-    margin-right: -2rem; }
+    margin-left: auto; }
     .section-header-image.align-right h3 {
       left: 0; }
       @media screen and (min-width: 1024px) {
@@ -310,20 +306,19 @@ header {
     background: url("../images/our-story.jpg") no-repeat center/cover; }
     @media screen and (min-width: 768px) {
       .our-story .our-story-image {
-        margin-left: -2rem;
         height: 650px; } }
     @media screen and (min-width: 1200px) {
       .our-story .our-story-image {
         height: 990px; } }
   .our-story .our-story-text {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    padding: 0 0.75rem; }
     @media screen and (min-width: 768px) {
       .our-story .our-story-text {
-        margin-top: 0;
-        padding: 1rem; } }
+        margin-top: 0; } }
     @media screen and (min-width: 1200px) {
       .our-story .our-story-text {
-        padding: 2rem; } }
+        max-width: 700px; } }
     .our-story .our-story-text h2 {
       margin-bottom: 1rem; }
       @media screen and (min-width: 768px) {
@@ -341,7 +336,7 @@ header {
       .hours-location .map iframe {
         height: 545px; } }
 .hours-location .location-pictures {
-  margin: -.5rem;
+  margin-top: -.5rem;
   margin-bottom: 3rem; }
   .hours-location .location-pictures .location-picture {
     height: 150px;
