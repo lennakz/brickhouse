@@ -193,6 +193,8 @@ header {
 .section-header-image {
   height: 250px;
   width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1rem; }
   .section-header-image h3 {
