@@ -4,6 +4,12 @@
 
 /* -------------------- BASE STYLING -------------------- */
 
+* {
+	position: relative;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
 html {
 	font-size: $font-size-base;
 }
@@ -13,7 +19,6 @@ body {
 	color: $primary-color;
 	font-family: $font-family-book;
 	font-size: 1rem;
-	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -78,11 +83,10 @@ a {
 	}
 }
 
-
 /* -------------------- CONTAINER -------------------- */
 
 .container {
 	@include xl-and-up {
-		max-width: 1340px;
+		max-width: $xl-screen-width;
 	};
 }
