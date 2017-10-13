@@ -7,7 +7,6 @@
 * {
 	position: relative;
 	box-sizing: border-box;
-	overflow-x: hidden;
 }
 
 html {
@@ -89,4 +88,12 @@ a {
 	@include xl-and-up {
 		max-width: $xl-screen-width;
 	};
+}
+
+/* -------------------- SECTIONS -------------------- */
+
+.our-menu,
+.our-story,
+.hours-location {
+	overflow-x: hidden;
 }

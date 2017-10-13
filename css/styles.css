@@ -15,8 +15,7 @@
 /* -------------------- BASE STYLING -------------------- */
 * {
   position: relative;
-  box-sizing: border-box;
-  overflow-x: hidden; }
+  box-sizing: border-box; }
 
 html {
   font-size: 20px; }
@@ -83,6 +82,12 @@ a {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px; } }
+
+/* -------------------- SECTIONS -------------------- */
+.our-menu,
+.our-story,
+.hours-location {
+  overflow-x: hidden; }
 
 /* ---------------------------------------------------
     NAVBAR
